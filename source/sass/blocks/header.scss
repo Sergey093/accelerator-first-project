@@ -1,0 +1,13 @@
+.header {
+  padding: 0 0 2px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $alumni-semiBold;
+
+  background: $hero-gradient;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}

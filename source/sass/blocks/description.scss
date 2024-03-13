@@ -1,0 +1,65 @@
+.description {
+  display: grid;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+
+  gap: 5px;
+  grid-template-columns: 120px 1fr;
+}
+
+.description__img {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.description__program-text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 143%;
+  font-family: $roboto-regular;
+  text-align: right;
+  color: $white;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.description__location-town {
+  margin: 0;
+
+  font-size: 32px;
+  line-height: 100%;
+  font-family: $alumni-semiBold;
+  text-align: end;
+  color: $white;
+}
+
+.description__location-name {
+  margin: 0;
+
+  font-size: 62px;
+  line-height: 100%;
+  font-family: $alumni-extraBold;
+  text-align: end;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.description__button {
+  min-width: 290px;
+  height: 60px;
+  margin-top: 16px;
+
+  font-size: 12px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $white;
+  cursor: pointer;
+}

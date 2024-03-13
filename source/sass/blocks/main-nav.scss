@@ -1,0 +1,33 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: stretch;
+    width: 768px;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 40px;
+  }
+}
+
+.main-nav__logo {
+  height: 20px;
+}
+
+.main-nav__phone {
+  font-size: 22px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  color: $white;
+  text-decoration: none;
+}

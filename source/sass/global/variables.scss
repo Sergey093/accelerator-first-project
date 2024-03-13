@@ -1,0 +1,38 @@
+// Вариант отображения
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+// Цвета
+$white: #ffffff;
+$white-additional: #f8f9fc;
+$dark-blue: #102654;
+$blue: #1c3374;
+$light-blue: #103aae;
+$text-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+$button-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+$hero-gradient: linear-gradient(
+  90deg,
+  #1c3477 0%,
+  #1c3477 0.01%,
+  #1a3578 39.11%,
+  #73184b 75.5%,
+  #b4022a 100%
+);
+$black: #030a1a;
+$button-tab: #d10a42;
+$banner: #ed0233;
+$error: #ff121f;
+
+// Fonts
+// 300
+$roboto-light: "Roboto Condensed Light", sans-serif;
+// 400
+$roboto-regular: "Roboto Condensed Regular", sans-serif;
+// 700
+$roboto-bold: "Roboto Condensed Bold", sans-serif;
+// 600
+$alumni-semiBold: "Alumni Sans SemiBold", sans-serif;
+// 800
+$alumni-extraBold: "Alumni Sans ExtraBold", sans-serif;

@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="hero container">
+        <div class="hero__container">
+          <nav class="hero__nav main-nav">
+            <div class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" width="100" height="20" alt="Логотип тренажёрного зала Супергум.">
+              </picture>
+            </div>
+            <a class="main-nav__phone" href="tel:88005555555">8 800 555-55-55</a>
+          </nav>
+          <section class="description">
+            <h1 class="visually-hidden">Супергейм</h1>
+            <!-- <div class="description__container"> -->
+            <div class="description__program">
+              <p class="description__program-text">Тренажёрный зал</p>
+              <p class="description__program-text">Групповые занятия</p>
+              <p class="description__program-text">Кардио-зона</p>
+            </div>
+            <div class="description__location">
+              <p class="description__location-town">Омск</p>
+              <p class="description__location-name">фитнес центр</p>
+            </div>
+            <button class="description__button" type="button">
+              <span>Купить абонемент</span>
+            </button>
+            <!-- </div> -->
+
+            <div class="description__img">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/hero-man-desktop.jpg 1x, img/hero-man-desktop@2x.jpg 2x">
+                <img srcset="img/hero-man-tablet.jpg 1x, img/hero-man-tablet@2x.jpg 2x" width="324" height="390" alt="Мужчина в футболке супермена">
+              </picture>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <!-- <body class="page-body">
+  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg>
+  <div data-test="hero">hero</div>
+  <div data-test="about">about</div>
+  <div data-test="price">price</div>
+  <div data-test="games">games</div>
+  <div data-test="juri">juri</div>
+  <div data-test="features">features</div>
+  <div data-test="offers">offers</div>
+  <div data-test="faq">faq</div>
+  <div data-test="reviews">reviews</div>
+  <div data-test="form">form</div>
+  <div data-test="footer">footer</div>
+  <script type="module" src="js/main.js"></script> -->
+  </div>
+</body>
 
 </html>
