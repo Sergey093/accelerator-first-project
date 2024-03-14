@@ -1,16 +1,67 @@
 .description {
+  // display: grid;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // margin-bottom: 32px;
+
+  // gap: 5px;
+  // grid-template-columns: 120px 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin-bottom: 94px;
+
+    gap: 27px;
+    grid-template-columns: 1fr 324px;
+  }
+}
+
+.description__info {
   display: grid;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 32px;
 
-  gap: 5px;
+  column-gap: 14px;
+
   grid-template-columns: 120px 1fr;
+  row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+    grid-template-areas: "program location" ". button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+  }
+}
+
+.description__program {
+  width: 113px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    grid-area: program;
+  }
+}
+
+.description__location {
+  @media (min-width: $tablet-width) {
+    grid-area: location;
+  }
 }
 
 .description__img {
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }
 
@@ -23,16 +74,27 @@
   text-align: right;
   color: $white;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  @media (min-width: $tablet-width) {
+    line-height: 157%;
+  }
 }
 
 .description__location-town {
   margin: 0;
+  margin-bottom: 15px;
 
   font-size: 32px;
   line-height: 100%;
   font-family: $alumni-semiBold;
   text-align: end;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+
+    font-size: 42px;
+  }
 }
 
 .description__location-name {
@@ -45,10 +107,18 @@
   color: $white;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    font-size: 72px;
+    line-height: 118%;
+    letter-spacing: 0.03em;
+  }
 }
 
 .description__button {
-  min-width: 290px;
+  width: 290px;
   height: 60px;
   margin-top: 16px;
 
@@ -62,4 +132,10 @@
   background-color: transparent;
   border: 2px solid $white;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+
+    grid-area: button;
+  }
 }
