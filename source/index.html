@@ -10,14 +10,14 @@
 
 <body class="page-body">
   <div class="wrapper">
-    <header class="header">
+    <header data-test="hero" class="header">
       <div class="hero container">
         <div class="hero__container">
           <nav class="hero__nav main-nav">
             <div class="main-nav__logo">
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <source media="(min-width: 1366px)" width="130" height="26" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" width="110" height="22" srcset="img/logo-tablet.svg">
                 <img src="img/logo-mobile.svg" width="100" height="20" alt="Логотип тренажёрного зала Супергум.">
               </picture>
             </div>
@@ -45,12 +45,46 @@
                 <img srcset="img/hero-man-tablet.jpg 1x, img/hero-man-tablet@2x.jpg 2x" width="324" height="390" alt="Мужчина в футболке супермена">
               </picture>
             </div>
-
           </section>
         </div>
       </div>
     </header>
-
+    <main class="main-page">
+      <section data-test="about" class="about">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="about__info container">
+          <h3 class="about__title">Тренажёрный зал</h3>
+          <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
+          <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="about__text about__text--hidden">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="about__media">
+          <div class="about__img">
+            <!-- <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/about-img-desktop.webp 1x, img/about-img-desktop@2x.webp 2x">
+              <source media="(min-width: 1366px)" width="660" height="400" srcset="img/about-img-desktop.jpg 1x, img/about-img-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/about-img-tablet.webp 1x, img/about-img-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="678" height="345" srcset="img/about-img-tablet.jpg 1x, img/about-img-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/about-img-mobile.webp 1x, img/about-img-mobile@2x.webp 2x">
+              <img srcset="img/about-img-mobile.jpg 1x, img/about-img-mobile@2x.jpg 2x" width="320" height="280" alt="Тренажёрный зал">
+            </picture> -->
+          </div>
+          <div class="about__video">
+            <a class="about__video-link" href="https://www.youtube.com/embed/9TZXsZItgdw?si=6dllxDfpXuFhMzsc">
+              <picture>
+                <source media="(min-width: 1366px)" type="image/webp" srcset="img/about-video-desktop.webp 1x, img/about-video-desktop@2x.webp 2x">
+                <source media="(min-width: 1366px)" width="660" height="400" srcset="img/about-video-desktop.jpg 1x, img/about-video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/about-video-tablet.webp 1x, img/about-video-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" width="678" height="345" srcset="img/about-video-tablet.jpg 1x, img/about-video-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/about-video-mobile.webp 1x, img/about-video-mobile@2x.webp 2x">
+                <img class="about__video-img" src="img/about-video-mobile.jpg 1x, img/about-video-mobile@2x.jpg 2x" width="100%" height="280" alt="Тренажёрный зал">
+              </picture>
+            </a>
+            <button class="about__video-button" aria-label="Запустить видео"></button>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- <body class="page-body">
   <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
   <svg>
@@ -69,6 +103,7 @@
   <div data-test="footer">footer</div>
   <script type="module" src="js/main.js"></script> -->
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

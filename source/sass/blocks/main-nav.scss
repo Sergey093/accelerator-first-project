@@ -1,18 +1,26 @@
 .main-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 54px;
   margin-bottom: 48px;
 
+  gap: 41px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     min-height: 84px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 32px;
+    min-height: 90px;
+    margin-bottom: 26px;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
   }
 }
 
