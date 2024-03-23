@@ -1,0 +1,123 @@
+.price__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 32px;
+  line-height: 100%;
+  font-family: $alumni-semiBold;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.price__tabs-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding: 0 0 10px;
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  gap: 8px;
+}
+
+.price__tabs-link {
+  font-size: 16px;
+  line-height: 100%;
+  font-family: $roboto-regular;
+  text-align: center;
+  color: $light;
+  text-decoration: none;
+}
+
+.price__tabs-link--active {
+  color: $dark-blue;
+  text-decoration: underline;
+
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 13px;
+}
+
+.price__tabs-items {
+  display: none;
+}
+
+.price__tabs-item {
+  min-height: 414px;
+  padding: 0 20px;
+}
+
+.price__tabs-item-title {
+  margin-bottom: 18px;
+  padding-top: 50px;
+
+  font-size: 22px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  text-align: center;
+  color: $dark-blue;
+  letter-spacing: 0.023em;
+}
+
+.price__tabs-item-text {
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  line-height: 157%;
+  font-family: $roboto-light;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.price__tabs-item-price {
+  position: relative;
+
+  min-height: 150px;
+  margin-bottom: 18px;
+
+  font-size: 48px;
+  line-height: 150%;
+  font-family: $roboto-bold;
+  text-align: center;
+  color: $dark-blue;
+  letter-spacing: 0.023em;
+}
+
+.price__tabs-item-price::after {
+  content: attr(data-price);
+  position: absolute;
+  top: -20px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+
+  font-size: 80px;
+  font-family: $roboto-bold;
+  color: $shadow;
+}
+
+.price__tabs-item-button {
+  display: block;
+  width: 195px;
+  height: 66px;
+  margin: 0 auto;
+  padding-top: 25px;
+
+  font-size: 12px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  text-align: center;
+  color: $dark-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.023em;
+
+  border: 2px solid $dark-blue;
+}
+
+.price__tabs-items:target {
+  display: block;
+}
