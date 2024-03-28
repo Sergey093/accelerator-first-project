@@ -50,3 +50,49 @@ function generateURL(id) {
 }
 
 findVideos();
+
+// Переключение табов
+
+const showTab = (elTabBtn) => {
+  const elTab = elTabBtn.closest('.price__tabs');
+  if (elTabBtn.classList.contains('price__tabs-link--active')) {
+    return;
+  }
+  const targetId = elTabBtn.dataset.targetId;
+  const elTabPane = elTab.querySelector(`.price__tabs-items[data-id="${targetId}"]`);
+  if (elTabPane) {
+    const elTabBtnActive = elTab.querySelector('.price__tabs-link--active');
+    elTabBtnActive.classList.remove('price__tabs-link--active');
+    const elTabPaneShow = elTab.querySelector('.price__tabs-items--active');
+    elTabPaneShow.classList.remove('price__tabs-items--active');
+    elTabBtn.classList.add('price__tabs-link--active');
+    elTabPane.classList.add('price__tabs-items--active');
+  }
+};
+
+document.addEventListener('click', (e) => {
+  if (e.target && !e.target.closest('.price__tabs-link')) {
+    return;
+  }
+  const elTabBtn = e.target.closest('.price__tabs-link');
+  showTab(elTabBtn);
+});
+
+const priceButtons = document.querySelectorAll('.price__tabs-item-button');
+
+priceButtons.forEach((button) => {
+  button.addEventListener('mouseenter', () => {
+    const priceItem = button.closest('.price__tabs-item');
+    if (priceItem) {
+      priceItem.classList.add('price__tabs-item--hover');
+    }
+  });
+
+  button.addEventListener('mouseleave', () => {
+    const priceItem = button.closest('.price__tabs-item');
+    if (priceItem) {
+      priceItem.classList.remove('price__tabs-item--hover');
+    }
+  });
+});
+

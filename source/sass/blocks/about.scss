@@ -11,7 +11,7 @@
     display: flex;
     padding-top: 120px;
 
-    gap: 30px;
+    gap: 35px;
   }
 }
 
@@ -90,7 +90,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 7px;
-    padding: 0 15px 0 0;
+    padding: 0;
 
     text-align: left;
   }
@@ -117,7 +117,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 0 103px 0 0;
+    padding: 0 86px 0 0;
   }
 }
 
@@ -167,6 +167,7 @@
   z-index: 0;
 
   width: 100%;
+  min-height: 170px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -180,7 +181,7 @@
 
   @media (min-width: $desktop-width) {
     top: 70.8%;
-    right: 65.9%;
+    right: 65.2%;
 
     width: 360px;
     height: 230px;
