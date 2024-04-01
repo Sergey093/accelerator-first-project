@@ -192,4 +192,34 @@
     height: 66px;
     margin-top: 0;
   }
+
+  &:hover {
+    color: $light-blue;
+
+    background: $white;
+    border: none;
+  }
+
+  &:focus {
+    color: $light-blue;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-color: black;
+  }
+
+  &:active {
+    color: $dark-blue;
+
+    background: $white;
+    border: none;
+  }
+
+  &--disabled {
+    color: $white;
+
+    background: transparent;
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
 }
