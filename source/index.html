@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="sass/vendor/swiper.scss">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -230,7 +233,154 @@
       <section class="juri container" data-test="juri">
         <div class="juri__wrapper">
           <h2 class="juri__title">Жюри</h2>
-
+          <div class="juri__mob-img">
+            <picture>
+              <source type="image/webp" width="227" height="280" srcset="img/juri-mobile.webp 1x, img/juri-mobile@2x.webp 2x">
+              <img src="img/juri-mobile.jpg" srcset="img/juri-mobile@2x.jpg 2x" width="227" height="280" alt="Фото Александра Пашкова">
+            </picture>
+          </div>
+          <div class="slider-top">
+            <div class="slider-buttons">
+              <div class="swiper-button swiper-button-prev"><svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 13L19 29L35 45" />
+                </svg></div>
+              <div class="swiper-button swiper-button-next"><svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 13L19 29L35 45" />
+                </svg></div>
+            </div>
+          </div>
+          <div class="swiper swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-anna.webp 1x, img/juri-anna@2x.webp 2x">
+                  <img src="img/juri-anna.jpg" srcset="img/juri-anna@2x.jpg 2x" width="260" height="300" alt="Фото Анны Павловой">
+                </picture>
+                <p class="swiper__name">Анна Павлова</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Анна Павлова</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победительница чемпионата Европы по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 5 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-alexey.webp 1x, img/juri-alexey@2x.webp 2x">
+                  <img src="img/juri-alexey.jpg" srcset="img/juri-alexey@2x.jpg 2x" width="260" height="300" alt="Фото Алексея Лаврова">
+                </picture>
+                <p class="swiper__name">Алексей Лавров</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Алексей Лавров</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата Узбекистана по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 7 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-alexandr.webp 1x, img/juri-alexandr@2x.webp 2x">
+                  <img src="img/juri-alexandr.jpg" srcset="img/juri-alexandr@2x.jpg 2x" width="260" height="300" alt="Фото Александра Пашкова">
+                </picture>
+                <p class="swiper__name">Александр Пашков</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Александр Пашков</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-maria.webp 1x, img/juri-maria@2x.webp 2x">
+                  <img src="img/juri-maria.jpg" srcset="img/juri-maria@2x.jpg 2x" width="260" height="300" alt="Фото Марии Кетовой">
+                </picture>
+                <p class="swiper__name">Мария Кетова</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Мария Кетова</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 4 Trainer</li>
+                    <li class="swiper__list-item">Победительница чемпионата Башкирии по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 8 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-anna.webp 1x, img/juri-anna@2x.webp 2x">
+                  <img src="img/juri-anna.jpg" srcset="img/juri-anna@2x.jpg 2x" width="260" height="300" alt="Фото Анны Павловой">
+                </picture>
+                <p class="swiper__name">Анна Павлова</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Анна Павлова</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-alexey.webp 1x, img/juri-alexey@2x.webp 2x">
+                  <img src="img/juri-alexey.jpg" srcset="img/juri-alexey@2x.jpg 2x" width="260" height="300" alt="Фото Алексея Лаврова">
+                </picture>
+                <p class="swiper__name">Алексей Лавров</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Алексей Лавров</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-alexandr.webp 1x, img/juri-alexandr@2x.webp 2x">
+                  <img src="img/juri-alexandr.jpg" srcset="img/juri-alexandr@2x.jpg 2x" width="260" height="300" alt="Фото Александра Пашкова">
+                </picture>
+                <p class="swiper__name">Александр Пашков</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Александр Пашков</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" width="260" height="300" srcset="img/juri-maria.webp 1x, img/juri-maria@2x.webp 2x">
+                  <img src="img/juri-maria.jpg" srcset="img/juri-maria@2x.jpg 2x" width="260" height="300" alt="Фото Марии Кетовой">
+                </picture>
+                <p class="swiper__name">Мария Кетова</p>
+                <div class="swiper__info">
+                  <h3 class="swiper__title">Мария Кетова</h3>
+                  <p class="swiper__subtitle">CrossFit</p>
+                  <ul class="swiper__list">
+                    <li class="swiper__list-item">Certified Level 3 Trainer</li>
+                    <li class="swiper__list-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="swiper__list-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -252,6 +402,8 @@
   <div data-test="footer">footer</div>
   <script type="module" src="js/main.js"></script> -->
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="js/vendor/swiper.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 

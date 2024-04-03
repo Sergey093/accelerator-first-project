@@ -1,7 +1,9 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import "vendor/normalize.scss";
+
+@import "vendor/swiper.scss";
 
 /* GLOBAL */
 @import "global/variables.scss";
@@ -21,13 +23,9 @@
 
 @import "blocks/hero.scss";
 
-// @import "blocks/user-list.scss";
-// @import "blocks/site-list.scss";
 @import "blocks/wrapper.scss";
 
 @import "blocks/description.scss";
-
-// @import "blocks/main-page.scss";
 
 @import "blocks/about.scss";
 
@@ -36,3 +34,5 @@
 @import "blocks/games.scss";
 
 @import "blocks/juri.scss";
+
+@import "blocks/swiper-block.scss";

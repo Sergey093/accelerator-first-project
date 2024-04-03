@@ -1,6 +1,5 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
+// import Swiper from 'swiper';
+// import { Navigation } from 'swiper/modules';
 // import 'swiper/css';
 function findVideos() {
   const videos = document.querySelectorAll('.about__video');
@@ -96,3 +95,19 @@ priceButtons.forEach((button) => {
   });
 });
 
+const slider = document.querySelector('.swiper');
+
+new Swiper(slider, {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1366: {
+      slidesPerView: 4,
+    }
+  }
+});

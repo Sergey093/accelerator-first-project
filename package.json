@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "ci": "^2.3.0",
-    "swiper": "11.0.7"
+    "swiper": "^11.0.7"
   },
   "engines": {
     "node": "^18.18 || ^20.9"
