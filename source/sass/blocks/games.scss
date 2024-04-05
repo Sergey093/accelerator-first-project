@@ -1,15 +1,18 @@
 .games {
   min-height: 610px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     min-height: 348px;
-    padding-top: 18px;
+    padding-top: 59px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 44px;
+    padding-top: 99px;
+    padding-bottom: 99px;
   }
 }
 

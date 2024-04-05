@@ -1,0 +1,39 @@
+.features {
+  width: 100%;
+  margin: 0;
+  padding: 42px 0;
+
+  background-color: $white-additional;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 45px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
+}
+
+.features__title {
+  margin: 0 0 39px;
+
+  font-size: 32px;
+  line-height: 100%;
+  font-family: $alumni-semiBold;
+  text-align: center;
+  color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
+    font-size: 42px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    padding-top: 0;
+
+    font-size: 54px;
+  }
+}
