@@ -1,12 +1,11 @@
-.features {
+.offers {
   width: 100%;
-  margin: 0;
-  padding: 42px 0 39px;
+  padding: 40px 0;
 
-  background-color: $white-additional;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 45px 61px;
+    padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,25 +13,35 @@
   }
 }
 
-.features__title {
-  margin: 0 0 39px;
+.offers__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.offers__title {
+  margin: 0 0 40px;
 
   font-size: 32px;
   line-height: 100%;
   font-family: $alumni-semiBold;
-  text-align: center;
   color: $dark-blue;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin: 0 0 34px;
 
     font-size: 42px;
-    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
-    padding-top: 0;
+    margin: 0 0 70px;
 
     font-size: 54px;
   }

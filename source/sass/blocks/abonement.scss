@@ -1,0 +1,104 @@
+.abonement {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.abonement__wrapper {
+  min-height: 271px;
+
+  background-color: red;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 278px;
+    padding: 40px 25px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    min-height: 460px;
+    padding: 40px 45px;
+  }
+}
+
+.abonement__year {
+  margin: 0 0 9px;
+  padding-top: 30px;
+
+  font-size: 22px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+    padding-top: 0;
+
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
+}
+
+.abonement__price {
+  margin: 0 0 28px;
+
+  font-size: 64px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+
+    font-size: 70px;
+  }
+}
+
+.abonement__text {
+  width: 260px;
+  margin: 0 auto 29px;
+
+  font-size: 16px;
+  line-height: 125%;
+  font-family: $roboto-light;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+
+.abonement__link {
+  position: absolute;
+  bottom: 15px;
+
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 100%;
+  font-family: $roboto-bold;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  pointer-events: none;
+
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+}
+
+.abonement__img img {
+  display: block;
+  margin: 0 auto;
+}

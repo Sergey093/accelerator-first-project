@@ -1,7 +1,7 @@
 .card__list {
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -39,6 +39,12 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+  }
+}
+
+.card__item:nth-last-child(1) {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
   }
 }
 
