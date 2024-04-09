@@ -78,7 +78,6 @@
 }
 
 .abonement__link {
-  position: absolute;
   bottom: 15px;
 
   display: block;
@@ -96,6 +95,10 @@
   text-decoration-color: white;
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
 }
 
 .abonement__img img {
